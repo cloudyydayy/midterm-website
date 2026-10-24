@@ -1,0 +1,253 @@
+/* Collection: รูปสลับระดับ มีพื้นที่คำบรรยายใต้รูป */
+.collection-intro {
+    padding-top: 44px;
+}
+
+.collection-intro h1 {
+    margin: 0;
+}
+
+.collection-intro em {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.board-toolbar {
+    padding-top: 56px;
+    padding-bottom: 32px;
+}
+
+.board-navigation {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+}
+
+.motion-control {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 44px;
+    padding: 8px 12px;
+    border: 0;
+    background: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.motion-control .icon {
+    opacity: 1;
+    filter: none;
+}
+
+.motion-control:hover {
+    color: var(--accent);
+}
+
+.board-viewport {
+    overflow: hidden;
+    touch-action: pan-y;
+    cursor: grab;
+    padding: 40px 0 32px;
+}
+
+.board-viewport:active {
+    cursor: grabbing;
+}
+
+.collage-board,
+.collection-group {
+    display: flex;
+    width: max-content;
+}
+
+.collage-board {
+    will-change: transform;
+}
+
+.collection-group {
+    align-items: flex-start;
+    gap: 64px;
+    padding: 0 32px;
+}
+
+.collection-item {
+    width: 280px;
+    flex: 0 0 280px;
+    margin: 0;
+    position: relative;
+}
+
+.collection-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+}
+
+.item-low {
+    margin-top: 100px;
+}
+
+.collection-image img {
+    width: 270px;
+    height: 400px;
+    object-fit: contain;
+    filter: drop-shadow(0 12px 12px #00000018);
+    transform: rotate(-6deg);
+}
+
+.item-low .collection-image img {
+    transform: rotate(7deg);
+}
+
+.item-ram .collection-image img,
+.item-am .collection-image img {
+    height: 280px;
+}
+
+.item-x100 .collection-image img {
+    height: 230px;
+}
+
+.collection-item figcaption {
+    visibility: hidden;
+    margin-top: 24px;
+    min-height: 172px;
+    cursor: default;
+}
+
+.collection-item:hover figcaption,
+.collection-item:focus-within figcaption {
+    visibility: visible;
+}
+
+.collection-item figcaption h2 {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+}
+
+.collection-item figcaption p {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+
+.collection-item .item-maker {
+    font-size: 14px;
+}
+
+.scene-word {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 220px;
+    height: 440px;
+    flex: 0 0 220px;
+    color: var(--accent);
+    font-size: 50px;
+    line-height: 54px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+@media (max-width: 767px) {
+    .collection-intro {
+        padding-top: 24px;
+    }
+
+    .collection-intro h1 {
+        font-size: 54px;
+        line-height: 60px;
+    }
+
+    .collection-intro em {
+        margin-left: 24px;
+    }
+
+    .board-toolbar {
+        padding-top: 40px;
+        padding-bottom: 24px;
+    }
+
+    .board-navigation {
+        gap: 16px;
+    }
+
+    #board-pause {
+        margin-right: auto;
+    }
+
+    .motion-control {
+        width: 44px;
+        height: 44px;
+        padding: 12px;
+    }
+
+    .motion-control span {
+        display: none;
+    }
+
+    .board-viewport {
+        padding-top: 24px;
+        padding-bottom: 12px;
+    }
+
+    .collection-group {
+        gap: 40px;
+        padding: 0 24px;
+    }
+
+    .collection-item {
+        width: 240px;
+        flex-basis: 240px;
+    }
+
+    .item-low {
+        margin-top: 60px;
+    }
+
+    .collection-image {
+        height: 310px;
+    }
+
+    .collection-image img {
+        width: 220px;
+        height: 290px;
+    }
+
+    .item-ram .collection-image img,
+    .item-am .collection-image img {
+        height: 220px;
+    }
+
+    .item-x100 .collection-image img {
+        height: 180px;
+    }
+
+    .collection-item figcaption {
+        visibility: visible;
+        margin-top: 16px;
+    }
+
+    .collection-item figcaption h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .scene-word {
+        width: 160px;
+        flex-basis: 160px;
+        height: 340px;
+        font-size: 38px;
+        line-height: 42px;
+    }
+}
+
+/* Playlist */
+.playlist {
+    padding-bottom: 6vh;
+}
